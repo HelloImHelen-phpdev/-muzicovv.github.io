@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<title>Watch</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="style.css@v=2.0.0.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+<meta property="og:url" content="https://codeshack.io/projects/shoppingcart/advanced/index.php?page=product&id=smart-watch">
+<meta property="og:title" content="Watch">
+<meta property="og:image" content="https://codeshack.io/projects/shoppingcart/advanced/uploads/watch.jpg">
+</head>
+<body>
+<header>
+<div class="content-wrapper">
+<h1>Shopping Cart</h1>
+<nav>
+<a href="index.php.html">Home</a>
+<a href="index.php@page=products.html">Products</a>
+<a href="index.php@page=myaccount.html">My Account</a>
+</nav>
+<div class="link-icons">
+<div class="search">
+<i class="fas fa-search" title="Search"></i>
+<input type="text" placeholder="Search...">
+</div>
+<a href="index.php@page=cart.html" title="Shopping Cart">
+<i class="fas fa-shopping-cart"></i>
+<span>0</span>
+</a>
+<a class="responsive-toggle" href="index.php@page=product&amp;id=smart-watch.html#">
+<i class="fas fa-bars"></i>
+</a>
+</div>
+</div>
+</header>
+<main>
+<div class="product content-wrapper">
+<div class="product-imgs">
+<div class="product-img-large">
+<img src="uploads/watch.jpg" alt="">
+</div>
+<div class="product-small-imgs">
+<div class="product-img-small selected">
+<img src="uploads/watch.jpg" width="150" height="150" alt="">
+</div>
+<div class="product-img-small">
+<img src="uploads/watch-2.jpg" width="150" height="150" alt="">
+</div>
+<div class="product-img-small">
+<img src="uploads/watch-3.jpg" width="150" height="150" alt="">
+</div>
+</div>
+</div>
+<div class="product-wrapper">
+<h1 class="name">Watch</h1>
+<span class="price" data-price="29.99">
+&dollar;29.99 </span>
+<form id="product-form" action="index.php@page=product&amp;id=smart-watch.html" method="post">
+<label for="Size">Size</label>
+<select id="Size" class="option select" name="option-Size" required>
+<option value="" selected disabled style="display:none">Size</option>
+<option value="Small" data-price="9.99" data-modifier="add" disabled>Small</option>
+<option value="Large" data-price="8.99" data-modifier="add">Large</option>
+</select>
+<label for="Type">Type</label>
+<div class="radio-checkbox">
+<label>
+<input class="option radio" value="Standard" name="option-Type" type="radio" data-price="0.00" data-modifier="add" required>Standard </label>
+<label>
+<input class="option radio" value="Deluxe" name="option-Type" type="radio" data-price="10.00" data-modifier="add">Deluxe </label>
+</div>
+<label for="Color">Color</label>
+<div class="radio-checkbox">
+<label>
+<input class="option checkbox" value="Red" name="option-Color[]" type="checkbox" data-price="1.00" data-modifier="add">Red </label>
+<label>
+<input class="option checkbox" value="Yellow" name="option-Color[]" type="checkbox" data-price="2.00" data-modifier="add">Yellow </label>
+<label>
+<input class="option checkbox" value="Blue" name="option-Color[]" type="checkbox" data-price="3.00" data-modifier="add">Blue </label>
+<label>
+<input class="option checkbox" value="Purple" name="option-Color[]" type="checkbox" data-price="4.00" data-modifier="add" disabled>Purple </label>
+<label>
+<input class="option checkbox" value="Brown" name="option-Color[]" type="checkbox" data-price="5.00" data-modifier="add" disabled>Brown </label>
+<label>
+<input class="option checkbox" value="Pink" name="option-Color[]" type="checkbox" data-price="6.00" data-modifier="add" disabled>Pink </label>
+<label>
+<input class="option checkbox" value="Orange" name="option-Color[]" type="checkbox" data-price="8.00" data-modifier="add">Orange </label>
+</div>
+<label for="Delivery Date">Delivery Date</label>
+<input id="Delivery Date" class="option datetime" name="option-Delivery Date" type="datetime-local" data-price="5.00" data-modifier="add">
+<label for="quantity">Quantity</label>
+<input id="quantity" type="number" name="quantity" value="1" min="1" placeholder="Quantity" required>
+<input type="submit" value="Add To Cart" class="btn">
+</form>
+<div class="description">
+<p>Unique watch made with stainless steel, ideal for those that prefer interative watches.</p>
+<h3>Features</h3>
+<ul>
+<li>Powered by Android with built-in apps.</li>
+<li>Adjustable to fit most.</li>
+<li>Long battery life, continuous wear for up to 2 days.</li>
+<li>Lightweight design, comfort on your wrist.</li>
+</ul> </div>
+</div>
+</div>
+</main>
+<footer>
+<div class="content-wrapper">
+<p>&copy; 2023, <a href="https://codeshack.io/package/php/advanced-shopping-cart-system/" target="_blank">Shopping Cart System</a></p>
+</div>
+</footer>
+<script>const currency_code="&dollar;",base_url="https://codeshack.io/projects/shoppingcart/advanced/",rewrite_url=false;</script>
+<script src="script.js@v=2.0.0"></script>
+</body>
+</html>

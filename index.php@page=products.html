@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<title>Products</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="style.css@v=2.0.0.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+<body>
+<header>
+<div class="content-wrapper">
+<h1>Shopping Cart</h1>
+<nav>
+<a href="index.php.html">Home</a>
+<a href="index.php@page=products.html">Products</a>
+<a href="index.php@page=myaccount.html">My Account</a>
+</nav>
+<div class="link-icons">
+<div class="search">
+<i class="fas fa-search" title="Search"></i>
+<input type="text" placeholder="Search...">
+</div>
+<a href="index.php@page=cart.html" title="Shopping Cart">
+<i class="fas fa-shopping-cart"></i>
+<span>0</span>
+</a>
+<a class="responsive-toggle" href="index.php@page=products.html#">
+<i class="fas fa-bars"></i>
+</a>
+</div>
+</div>
+</header>
+<main>
+<div class="products content-wrapper">
+<h1>Products</h1>
+<div class="products-header">
+<p>4 Products</p>
+<form action="index.php@page=products.html" method="get" class="products-form">
+<input type="hidden" name="page" value="products">
+<label class="category">
+Category
+<select name="category">
+<option value="all" selected>All</option>
+<option value="1"> Sale</option><option value="2"> Watches</option> </select>
+</label>
+<label class="sortby">
+Sort by
+<select name="sort">
+<option value="sort1">Alphabetical A-Z</option>
+<option value="sort2">Alphabetical Z-A</option>
+<option value="sort3" selected>Newest</option>
+<option value="sort4">Oldest</option>
+<option value="sort5">Highest Price</option>
+<option value="sort6">Lowest Price</option>
+</select>
+</label>
+</form>
+</div>
+<div class="products-wrapper">
+<a href="index.php@page=product&amp;id=smart-watch.html" class="product">
+<img src="uploads/watch.jpg" width="200" height="200" alt="Watch">
+<span class="name">Watch</span>
+<span class="price">
+&dollar;29.99 </span>
+</a>
+<a href="index.php@page=product&amp;id=2.html" class="product">
+<img src="uploads/wallet.jpg" width="200" height="200" alt="Wallet">
+<span class="name">Wallet</span>
+<span class="price">
+&dollar;14.99 <span class="rrp">&dollar;19.99</span>
+</span>
+</a>
+<a href="index.php@page=product&amp;id=3.html" class="product">
+<img src="uploads/headphones.jpg" width="200" height="200" alt="Headphones">
+<span class="name">Headphones</span>
+<span class="price">
+&dollar;19.99 </span>
+</a>
+<a href="index.php@page=product&amp;id=4.html" class="product">
+<img src="uploads/camera.jpg" width="200" height="200" alt="Digital Camera">
+<span class="name">Digital Camera</span>
+<span class="price">
+&dollar;269.99 </span>
+</a>
+</div>
+<div class="buttons">
+</div>
+</div>
+</main>
+<footer>
+<div class="content-wrapper">
+<p>&copy; 2023, <a href="https://codeshack.io/package/php/advanced-shopping-cart-system/" target="_blank">Shopping Cart System</a></p>
+</div>
+</footer>
+<script>const currency_code="&dollar;",base_url="https://codeshack.io/projects/shoppingcart/advanced/",rewrite_url=false;</script>
+<script src="script.js@v=2.0.0"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1">
+<title>My Account</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link href="style.css@v=2.0.0.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+</head>
+<body>
+<header>
+<div class="content-wrapper">
+<h1>Shopping Cart</h1>
+<nav>
+<a href="index.php.html">Home</a>
+<a href="index.php@page=products.html">Products</a>
+<a href="index.php@page=myaccount.html">My Account</a>
+</nav>
+<div class="link-icons">
+<div class="search">
+<i class="fas fa-search" title="Search"></i>
+<input type="text" placeholder="Search...">
+</div>
+<a href="index.php@page=cart.html" title="Shopping Cart">
+<i class="fas fa-shopping-cart"></i>
+<span>0</span>
+</a>
+<a class="responsive-toggle" href="index.php@page=myaccount.html#">
+<i class="fas fa-bars"></i>
+</a>
+</div>
+</div>
+</header>
+<main>
+<div class="myaccount content-wrapper">
+<div class="login-register">
+<div class="login">
+<h1>Login</h1>
+<p>
+<u>Admin Credentials</u><br>
+Email: admin@website.com<br>
+Password: admin
+</p>
+<form action="index.php@page=myaccount.html" method="post">
+<label for="email" class="form-label">Email</label>
+<input type="email" name="email" id="email" placeholder="john@example.com" value="admin@website.com" required class="form-field">
+<label for="password" class="form-label">Password</label>
+<input type="password" name="password" id="password" placeholder="Password" value="admin" required class="form-field">
+<input name="login" type="submit" value="Login" class="btn">
+</form>
+</div>
+<div class="register">
+<h1>Register</h1>
+<form action="index.php@page=myaccount.html" method="post">
+<label for="email" class="form-label">Email</label>
+<input type="email" name="email" id="email" placeholder="john@example.com" required class="form-field">
+<label for="password" class="form-label">Password</label>
+<input type="password" name="password" id="password" placeholder="Password" required class="form-field">
+<label for="cpassword" class="form-label">Confirm Password</label>
+<input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required class="form-field">
+<input name="register" type="submit" value="Register" class="btn">
+</form>
+</div>
+</div>
+</div>
+</main>
+<footer>
+<div class="content-wrapper">
+<p>&copy; 2023, <a href="https://codeshack.io/package/php/advanced-shopping-cart-system/" target="_blank">Shopping Cart System</a></p>
+</div>
+</footer>
+<script>const currency_code="&dollar;",base_url="https://codeshack.io/projects/shoppingcart/advanced/",rewrite_url=false;</script>
+<script src="script.js@v=2.0.0"></script>
+</body>
+</html>
